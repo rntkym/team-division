@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='UTF-8'>
+  <title>グループ分け</title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src='shuffle.js'></script>
+</head>
+<body onload='readCsv();'>
+
+  <nav class='navbar navbar-dark bg-dark'>
+    <span class='navbar-brand mb-0 h1'>　グループ分け</span>
+  </nav>
+
+  <div class='row'>
+    <div class='col-1'></div>
+
+    <div class='col-4'>
+      <div class='row'>
+        <div class='col-12'>
+          <label>
+            <form class='btn btn-primary btn-lg btn-block' name='myform'>
+              csvファイルを選択
+              <input type='file' name='myfile' style='display:none'>
+            </form>
+          </label>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-12'>
+          <h5 id='num'>人数：　名</h5>
+        </div>
+        <div class='col-12'>
+          <table class='table table-striped'>
+            <thead>
+              <tr>
+                <th>氏名</th>
+                <th>部署</th>
+              </tr>
+            </thead>
+            <tbody id='tbody'>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class='col-1 image'>
+      <img src='icon.png'>
+    </div>
+
+    <div class='col-5'>
+      <div class='row'>
+        <div class='col-6'>
+          <input id='group' type='text' class='form-control form-control-lg' placeholder='グループ数（半角数字）'>
+        </div>
+        <div class='col-6'>
+          <button type='submit' class='btn btn-primary btn-block btn-lg' onClick='createArea();'>表を作成</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class='row'>
+        <div class='col-6'>
+          <button type='button' class='btn btn-success btn-lg btn-block' onClick='start();'>START</button>
+        </div>
+        <div class='col-6'>
+          <button type='button' class='btn btn-danger btn-lg btn-block' onClick='stop();'>STOP</button>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div id='result-left' class='col-6'></div>
+        <div id='result-right' class='col-6'></div>
+      </div>
+    </div>
+
+    <div class='col-1'></div>
+  </div>
+</body>
+</html>

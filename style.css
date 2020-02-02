@@ -1,0 +1,21 @@
+nav{
+  margin-bottom: 50px;
+}
+ul{
+  text-align: center;
+}
+form{
+  margin-bottom: 30px;
+}
+img{
+  width: 70%;
+}
+label{
+  width: 100%
+}
+.image{
+  text-align:center;
+}
+.list-group{
+  margin: 30px 0;
+}
