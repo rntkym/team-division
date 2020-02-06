@@ -1,4 +1,4 @@
-# team-division
+# Team Division
 Team Division is an application that assigns people in the same department to different groups.
 
 ## Demo
