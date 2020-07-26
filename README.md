@@ -1,5 +1,11 @@
-# Team Division
-Team Division is an application that assigns people in the same department to different groups.
+# team-division
+こんな条件が揃った時に使うグループ分けアプリ
+- 結構な人数で懇親会をしたい
+- テーブルが別れている店を予約してしまった
+- 同じ部署の人は離れて座ってほしい  
 
-## Demo
+▼詳しくはこちら  
+https://qiita.com/rntkym/items/95b6056e138332bdfdfc
+
+## デモ
 ![](https://github.com/rntkym/team-division/wiki/demo.gif)
